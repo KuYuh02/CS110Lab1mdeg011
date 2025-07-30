@@ -9,11 +9,11 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background: #e8f0fe;
       color: #333;
     }
     header {
-      background: #222;
+      background: #1a237e;
       color: #fff;
       text-align: center;
       padding: 2rem 1rem;
@@ -32,6 +32,28 @@
       background: #ddd;
       font-size: 0.9rem;
     }
+    img.profile {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      border-radius: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #999;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+    .social-icons img {
+      width: 30px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
@@ -40,26 +62,120 @@
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Work Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#courses">Courses</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello. My name is Martin De Guzman. I am 22 years old Filipino from the Bay Area. I graduated from UCR Spring 2025 with a Bachelor's in Computer Science, and I plan to specialize in the Cybersecuity branch of the field.Besides programming, my hobbies include lifting weights, playing the ukulele, and taking care of my kitten. I believe this field is perfect for me and my personality because it makes you continuously learn. Thank you for reading and feel free to explore the rest of my online portfolio. You can find my contact information below as well at the top section if you have any questions. Thanks!</p>
+    <img src="profPic.jpg" alt="Photo of Martin De Guzman" class="profile">
+    <p>Hello. My name is Martin De Guzman. I am a 22-year-old Filipino from the Bay Area. I graduated from UCR Spring 2025 with a Bachelor's in Computer Science, and I plan to specialize in cybersecurity. Besides programming, my hobbies include lifting weights, playing the ukulele, and taking care of my kitten. I believe this field is perfect for me because it constantly pushes you to learn. Feel free to explore my portfolio and reach out using the contact info below. Thanks!</p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>List a few cool things you've built or worked on. A simple bullet list works great.</p>
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>A.A. Computer Science</strong> – <em>Las Positas College</em>, 2020–2023</li>
+      <li><strong>B.S. Computer Science</strong> – <em>University of California, Riverside</em>, 2023–2025</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <strong>Part-Time Employee</strong> – <em>Baskin Robbins, Dublin, CA</em> (Sep 2019 – May 2020)
+        <ul>
+          <li>Achieved 99% satisfaction rate by preparing desserts and providing excellent customer service.</li>
+          <li>Led opening/closing duties including register management and flavor displays.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Part-Time Cashier</strong> – <em>Sprouts Farmer's Market, Dublin, CA</em> (Apr 2021 – Oct 2021)
+        <ul>
+          <li>Provided product support and resolved customer issues with a 100% satisfaction rating.</li>
+          <li>Handled cash register operations and developed strong financial accuracy skills.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong>
+        <ul>
+          <li>Python</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </li>
+      <li><strong>Technologies/Tools:</strong>
+        <ul>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Visual Studio Code</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="courses">
+    <h2>Courses</h2>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Instructor</th>
+        <th>Term Taken</th>
+      </tr>
+      <tr>
+        <td>CS100 – Software Construction</td>
+        <td>Prof. Ali</td>
+        <td>Fall 2023</td>
+      </tr>
+      <tr>
+        <td>CS152 – Compiler Design</td>
+        <td>Prof. LePendu</td>
+        <td>Winter 2024</td>
+      </tr>
+      <tr>
+        <td>CS153 – Operating Systems</td>
+        <td>Prof. Song</td>
+        <td>Spring 2024</td>
+      </tr>
+      <tr>
+        <td>CS175 – Entrepreneurship in Computing</td>
+        <td>Prof. Faloutsos</td>
+        <td>Fall 2025</td>
+      </tr>
+      <tr>
+        <td>CS142 – Algorithm Engineering</td>
+        <td>Prof. Knight</td>
+        <td>Spring 2025</td>
+      </tr>
+    </table>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: mangelodeguzman20@gmail.com</p>
+    <p>Email: <a href="mailto:mangelodeguzman20@gmail.com">mangelodeguzman20@gmail.com</a></p>
   </section>
 
   <footer>
+    <div class="social-icons">
+      <a href="https://github.com/KuYuh02">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/martin-angelo-de-guzman/">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" />
+      </a>
+    </div>
     &copy; 2025 Martin De Guzman. All rights reserved.
   </footer>
 </body>
